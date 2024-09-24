@@ -1,56 +1,62 @@
 import { Separator } from "@/components/ui/separator";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 import Image from "next/image";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { FaInstagram } from "react-icons/fa6";
 
 const MenuLateral = () => {
   return (
     <header className="w-[250px] h-full bg-slate-900 fixed z-10 ">
-      <div className="h-[250px] w-full">
-        <div className=" h-[280px] w-[249px] bg-green-500 top-[-180px] rounded-full absolute z-[-1]">
-          <div>
-            <Image
-              src={"/images/fabio.jpg"}
-              width={250}
-              height={250}
-              alt="fabio"
-            />
-            <div className="text-white text-center py-10">Fábio Lopes</div>
+      <div className="h-[250px] w-full mb-[85px]">
+        <div className=" h-72 w-[291px] bg-green-500 left-[-40px] top-[-170px] rounded-full absolute z-[-1]"></div>
+        <div>
+          <Image
+            src={"/Iam.png"}
+            width={120}
+            height={120}
+            alt="fabio"
+            className="justify-center mx-auto rounded-full mt-12"
+          />
+          <div className="text-white text-center py-2  tracking-[0.2em]">
+            FÁBIO LOPES
           </div>
         </div>
       </div>
 
-      <div className="w-[250px] h-[450px] text-white text-center mt-20 ">
-        <ul className="space-y-2">
-          <li>
-            <a href="">Home</a>
+      <div className="w-[250px] text-white text-center text-sm ">
+        <ul className="space-y-2 tracking-[0.2em]">
+          <li className="hover:text-slate-400 ">
+            <a href="">HOME</a>
           </li>
           <Separator className="bg-slate-700 " />
-          <li>
-            <a href="">Sobre</a>
+          <li className="hover:text-slate-400">
+            <a href="">SOBRE</a>
           </li>
           <Separator className="bg-slate-700 " />
-          <li>
-            <a href="">Serviços</a>
+          <li className="hover:text-slate-400">
+            <a href="">SERVIÇOS</a>
           </li>
           <Separator className="bg-slate-700 " />
-          <li>
-            <a href="">Portfólio</a>
+          <li className="hover:text-slate-400">
+            <a href="">PORTFÓLIO</a>
           </li>
           <Separator className="bg-slate-700 " />
-          <li>
-            <a href="">Contato</a>
+          <li className="hover:text-slate-400">
+            <a href="">CONTATO</a>
           </li>
         </ul>
       </div>
-      <div className="w-[250px] h-[50px] flex text-white gap-1 items-center justify-around ">
+
+      <div className="w-[250px] flex justify-center  text-white space-x-5 px-5 pt-[350px] ">
         <a href="">
-          <GitHubLogoIcon />
+          <BsGithub className="hover:text-slate-400" size={22} />
         </a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
+        <a href="">
+          <BsLinkedin className="hover:text-slate-400" size={22} />
+        </a>
+        <a href="">
+          <FaInstagram className="hover:text-slate-400" size={22} />
+        </a>
       </div>
     </header>
   );
