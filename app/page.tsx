@@ -1,12 +1,19 @@
-import Hero from "./components/header";
-import MenuLateral from "./components/menu-lateral";
+import AboutMe from "./components/about-me";
+import Contact from "./components/contact";
+import Header from "./components/header";
+import { Portfolio } from "./components/portfolio";
+import SideMenu from "./components/SideMenu";
+import Skills from "./components/skills";
 
 export default function Home() {
   return (
     <>
-      <MenuLateral />
-      <Hero />
-      <Hero />
+      <SideMenu />
+      <Header />
+      <AboutMe />
+      <Skills />
+      <Portfolio />
+      <Contact />
     </>
   );
 }

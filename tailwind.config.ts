@@ -10,6 +10,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        bgMain: "#10101A",
+        bgSecond: "#0C0C14",
+        hoverColor: "#212138",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
