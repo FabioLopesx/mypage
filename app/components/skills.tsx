@@ -1,4 +1,5 @@
 import { Button } from "@/app/components/ui/button";
+import Link from "next/link";
 
 const Skills = () => {
   return (
@@ -18,9 +19,11 @@ const Skills = () => {
             atraente. Além disso, estou familiarizado com boas práticas e
             otimizações para a web, assegurando um desempenho eficiente.
           </p>
-          <Button className="bg-green-500 p-3 text-white hover:bg-green-700 xl:absolute">
-            Ver mais
-          </Button>
+          <Link href="https://www.w3schools.com/html/default.asp">
+            <Button className="bg-green-500 p-3 text-white hover:bg-green-700 xl:absolute">
+              Ver mais
+            </Button>
+          </Link>
         </div>
 
         <div className="rounded-xl bg-bgSecond p-4 text-white transition-all delay-150 duration-200 hover:scale-110 hover:bg-hoverColor xl:min-h-[500px] 2xl:max-h-[420px]">
@@ -32,9 +35,11 @@ const Skills = () => {
             de negócios complexa no lado do cliente. Além de estar familiarizado
             com práticas de programação assíncrona.
           </p>
-          <Button className="bg-green-500 p-3 text-white hover:bg-green-700 xl:absolute">
-            Ver mais
-          </Button>
+          <Link href="https://www.w3schools.com/js/default.asp">
+            <Button className="bg-green-500 p-3 text-white hover:bg-green-700 xl:absolute">
+              Ver mais
+            </Button>
+          </Link>
         </div>
 
         <div className="rounded-xl bg-bgSecond p-4 text-white transition-all delay-150 duration-200 hover:scale-110 hover:bg-hoverColor xl:min-h-[500px] 2xl:max-h-[420px]">
@@ -47,9 +52,11 @@ const Skills = () => {
             desenvolvimento, como o uso de testes unitários e integração
             contínua.
           </p>
-          <Button className="bg-green-500 p-3 text-white hover:bg-green-700 xl:absolute">
-            Ver mais
-          </Button>
+          <Link href="https://www.w3schools.com/react/default.asp">
+            <Button className="bg-green-500 p-3 text-white hover:bg-green-700 xl:absolute">
+              Ver mais
+            </Button>
+          </Link>
         </div>
       </div>
       <div className="px-5 pb-6 lg:pl-[300px] lg:pr-6">
@@ -62,12 +69,16 @@ const Skills = () => {
           </p>
 
           <div className="flex justify-center pb-10">
-            <Button className="mr-4 mt-4 bg-green-500 p-3 text-white hover:bg-green-700">
-              Entre em contato
-            </Button>
-            <Button className="mt-4 bg-green-500 p-3 text-white hover:bg-green-700">
-              Me envie um e-mail
-            </Button>
+            <Link href="#contact">
+              <Button className="mr-4 mt-4 bg-green-500 p-3 text-white hover:bg-green-700">
+                Entre em contato
+              </Button>
+            </Link>
+            <Link href="#contact">
+              <Button className="mt-4 bg-green-500 p-3 text-white hover:bg-green-700">
+                Me envie um e-mail
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

@@ -20,9 +20,11 @@ const Header = () => {
           <p>Venha e conheça um pouco mais sobre mim</p>
 
           <ArrowDown size={28} />
-          <Button className="mt-5 h-[45px] w-[150px] bg-green-600 text-base tracking-[0.1em] transition-all delay-100 hover:scale-110 hover:bg-green-700">
-            Download CV
-          </Button>
+          <a href="CURRICULO.pdf" download>
+            <Button className="mt-5 h-[45px] w-[150px] bg-green-600 text-base tracking-[0.1em] transition-all delay-100 hover:scale-110 hover:bg-green-700">
+              Download CV
+            </Button>
+          </a>
         </div>
       </div>
     </section>

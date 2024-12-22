@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa6";
+import Link from "next/link";
 
 const SideMenu = () => {
   const [navbar, setNavbar] = useState(true);
@@ -78,19 +79,19 @@ const SideMenu = () => {
             </ul>
           </div>
 
-          <div className="flex w-[250px] justify-center space-x-5 px-5 pt-[350px] text-white">
-            <a href="https://github.com/FabioLopesx" target="_blank">
+          <div className="flex w-[250px] justify-center space-x-5 px-5 pt-[320px] text-white">
+            <Link href="https://github.com/FabioLopesx" target="_blank">
               <BsGithub className="hover:text-green-700" size={22} />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.linkedin.com/in/fabio-lopes-208649164/"
               target="_blank"
             >
               <BsLinkedin className="hover:text-green-700" size={22} />
-            </a>
-            <a href="">
+            </Link>
+            <Link href="https://www.instagram.com/fabiolopesx/" target="_blank">
               <FaInstagram className="hover:text-green-700" size={22} />
-            </a>
+            </Link>
           </div>
         </header>
       </section>
